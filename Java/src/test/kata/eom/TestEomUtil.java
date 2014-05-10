@@ -65,4 +65,18 @@ public class TestEomUtil {
         assertEquals("date is different", 29, target.get(Calendar.DATE));
     }
 
+
+    @Test
+    public void testNonLeap2() {
+        Calendar calendar = Calendar.getInstance();
+        calendar.set(Calendar.YEAR, 2000);
+        calendar.set(Calendar.MONTH, 1);
+        calendar.set(Calendar.DATE, 15);
+        Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
+        Calendar target = Calendar.getInstance();
+        target.setTime(eom);
+        assertEquals("year is different", 2000, target.get(Calendar.YEAR));
+        assertEquals("month is different", 1, target.get(Calendar.MONTH));
+        assertEquals("date is different", 28, target.get(Calendar.DATE));
+    }
 }

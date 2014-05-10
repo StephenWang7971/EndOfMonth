@@ -66,7 +66,7 @@
       <file leaf-file-name="EomUtil.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/kata/eom/EomUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="810">
+            <state vertical-scroll-proportion="0.0" vertical-offset="399" max-vertical-offset="810">
               <caret line="30" column="39" selection-start-line="30" selection-start-column="39" selection-end-line="30" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -80,8 +80,8 @@
       <file leaf-file-name="TestEomUtil.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/kata/eom/TestEomUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7080292" vertical-offset="624" max-vertical-offset="1035">
-              <caret line="66" column="41" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.4160584" vertical-offset="744" max-vertical-offset="1245">
+              <caret line="66" column="46" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -596,8 +596,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/kata/eom/TestEomUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7080292" vertical-offset="624" max-vertical-offset="1035">
-          <caret line="66" column="41" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.4160584" vertical-offset="744" max-vertical-offset="1245">
+          <caret line="66" column="46" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
