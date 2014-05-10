@@ -28,32 +28,22 @@ public class EomUtil {
             eom = 30;
         }
 
-        calendar.set(Calendar.DATE, 31);   //This causes error in other montht.
+        calendar.set(Calendar.DATE, eom);
 
         return calendar.getTime();
     }
 
     private static boolean isSmallMonth(int month) {
         int[] months = {3, 5, 8, 10};
-        if (Arrays.stream(months).anyMatch(e -> e == month)) {
-            return true;
-        }
-        return false;
+        return Arrays.stream(months).anyMatch(e -> e == month);
     }
 
     private static boolean isBigMonth(int month) {
         int[] months = {0, 2, 4, 6, 7, 9, 11};
-        if (Arrays.stream(months).anyMatch(e -> e == month)) {
-            return true;
-        }
-        return false;
+        return Arrays.stream(months).anyMatch(e -> e == month);
     }
 
     private static boolean isLeapYear(int year) {
-        if (year % 4 == 0 && year % 400 != 0) {
-            return true;
-        }
-        return false;
-
+        return (year % 4 == 0 && year % 400 != 0);
     }
 }

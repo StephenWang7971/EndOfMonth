@@ -54,7 +54,7 @@ public class TestEomUtil {
     @Test
     public void testLeap2() {
         Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.YEAR, 2013);
+        calendar.set(Calendar.YEAR, 2012);
         calendar.set(Calendar.MONTH, 1);
         calendar.set(Calendar.DATE, 15);
         Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
