@@ -18,11 +18,12 @@ public class TestEomUtil {
         Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
         Calendar target = Calendar.getInstance();
         target.setTime(eom);
-        assertEquals(2013, target.get(Calendar.YEAR));
-        assertEquals(0, target.get(Calendar.MONTH));
-        assertEquals(31, target.get(Calendar.DATE));
+        assertEquals("year is different", 2013, target.get(Calendar.YEAR));
+        assertEquals("month is different", 0, target.get(Calendar.MONTH));
+        assertEquals("date is different", 31, target.get(Calendar.DATE));
     }
 
+    @Test
     public void test46911() {
 
         Calendar calendar = Calendar.getInstance();
@@ -32,11 +33,12 @@ public class TestEomUtil {
         Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
         Calendar target = Calendar.getInstance();
         target.setTime(eom);
-        assertEquals(2013, target.get(Calendar.YEAR));
-        assertEquals(3, target.get(Calendar.MONTH));
-        assertEquals(30, target.get(Calendar.DATE));
+        assertEquals("year is different", 2013, target.get(Calendar.YEAR));
+        assertEquals("month is different", 3, target.get(Calendar.MONTH));
+        assertEquals("date is different", 30, target.get(Calendar.DATE));
     }
 
+    @Test
     public void test2() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2013);
@@ -45,11 +47,12 @@ public class TestEomUtil {
         Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
         Calendar target = Calendar.getInstance();
         target.setTime(eom);
-        assertEquals(2013, target.get(Calendar.YEAR));
-        assertEquals(1, target.get(Calendar.MONTH));
-        assertEquals(28, target.get(Calendar.DATE));
+        assertEquals("year is different", 2013, target.get(Calendar.YEAR));
+        assertEquals("month is different", 1, target.get(Calendar.MONTH));
+        assertEquals("date is different", 28, target.get(Calendar.DATE));
     }
 
+    @Test
     public void testLeap2() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2013);
@@ -58,9 +61,9 @@ public class TestEomUtil {
         Date eom = EomUtil.getEndDateOfMonth(calendar.getTime());
         Calendar target = Calendar.getInstance();
         target.setTime(eom);
-        assertEquals(2012, target.get(Calendar.YEAR));
-        assertEquals(1, target.get(Calendar.MONTH));
-        assertEquals(29, target.get(Calendar.DATE));
+        assertEquals("year is different", 2012, target.get(Calendar.YEAR));
+        assertEquals("month is different", 1, target.get(Calendar.MONTH));
+        assertEquals("date is different", 29, target.get(Calendar.DATE));
     }
 
 }
