@@ -4,7 +4,9 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
+
 public class EomUtil {
+
 
     public static Date getEndDateOfMonth(Date given) {
         Calendar calendar = Calendar.getInstance();
@@ -44,6 +46,8 @@ public class EomUtil {
     }
 
     private static boolean isLeapYear(int year) {
-        return (year % 4 == 0 && year % 400 != 0);
+        return ((year % 4 == 0 && year % 100 != 0)||(year%400==0));
     }
+
+
 }
