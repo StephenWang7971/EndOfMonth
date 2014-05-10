@@ -10,7 +10,7 @@ import static org.junit.Assert.assertEquals;
 public class TestEomUtil {
 
     @Test
-    public void test135781012 () {
+    public void test135781012() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2013);
         calendar.set(Calendar.MONTH, 0);
@@ -25,7 +25,6 @@ public class TestEomUtil {
 
     @Test
     public void test46911() {
-
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2013);
         calendar.set(Calendar.MONTH, 3);
